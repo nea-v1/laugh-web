@@ -2,14 +2,13 @@ $(document).ready(function(){
     const date = new Date();
     const hour = date.getHours();
     let message ="";
-    if(message <=12 ){
-        message ="Good morning"
+    if(message <=24){
+        message ="Good Evening";
+    }else if(message <=17 ){
+        message = "Good Afternoon";
+    }else if (message <=12) {
+        message = "Good Morning";
     }
-    if(message >12 ){
-        message ="Good Afternoon"
-    }
-    if(message >17){
-        message ="Good Evening"
-    }
-    $('#change').empty().append( ""message"" + " Rin Minea");
+    
+    $('#change').empty().append( message + " Rin Minea");
 })
