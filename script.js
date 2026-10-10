@@ -6,9 +6,9 @@ $(document).ready(function(){
         message ="Good Evening";
     }else if(message <=17 ){
         message = "Good Afternoon";
-    }else if (message <=12) {
+    }else(message <=12) 
         message = "Good Morning";
-    }
+    
     
     $('#change').empty().append( message + " Rin Minea");
 })
